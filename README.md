@@ -1,38 +1,58 @@
 # EndJoy — Weekend Planner
 
-A playful, responsive weekend planner with drag-and-drop, moods, themes, export-to-image, and local persistence.
+EndJoy is an interactive weekend planner that helps you organize your free time by simply selecting activities and arranging them into a personalized weekend schedule. The idea was to make planning fun, intuitive, and visually engaging.
 
-## Quick start
-```bash
-npm install
-npm run dev
-```
-Visit the printed dev URL.
+👉 [Live Demo](https://endjoyweekendplanner.vercel.app/) 
 
-
-## Features implemented
-- Browse 60+ activities (search + filter; virtualized with `react-window`)
-- Add to Saturday/Sunday schedule
-- Edit/remove items
-- Drag-and-drop across days (native HTML5)
-- Mood tracking per activity (emoji + label)
-- Personalization: themes (System/lazy weekend)
-- Long-weekend support: add Friday/Monday with one click
-- Export poster as PNG (using `html-to-image`) and Print to PDF
-- Persistence via `localStorage`
-- Offline-friendly (basic) via service worker
-- Accessible: semantic roles, aria labels; keyboard friendly inputs
-- Scales smoothly with 50+ activities
+## 🚀 Features implemented
+- **Activity Catalog** – Browse, search, and filter activities by category.
+- **Wide range of categories to choose from** - Browse 60+ activities (search + filter; virtualized with `react-window`)
+- **Add to Schedule** – Add activities to the currently selected day (default: Saturday).
+- **Drag-and-Drop** – Reorder or move activities between days easily
+- **Edit & Remove** – Modify activity details or remove them from the plan.
+- **Long Weekend Support** – Add/remove extra days (e.g., Friday or Monday).
+- **Themes** – System theme support + special Lazy Weekend(light/dark) mode.
+- **Export & Share** – Export as poster or print as PDF.
+- **Find Nearby** – Quick Google Maps search for activities.
+- **Responsive UI** – Works beautifully across devices.
+-  **Works offline** - Offline-friendly (basic) via service worker & Persistence via `localStorage`
+- **Scalibilty** - Scales smoothly with 50+ activities
 
 > Note: Holiday awareness uses a tiny placeholder list in `src/utils/longWeekends.js`. Replace it with a proper calendar API if needed.
 
-## Folder structure
-- `src/lib/planner.js` ➜ pure functions (tested with Vitest)
-- `src/components/*` ➜ UI building blocks
-- `src/utils/activities.js` ➜ data and mood catalog
-- `public/service-worker.js` ➜ simple cache-first SW
+---
 
-## Keyboard tips
-- In catalog, type to search then press Enter on an item to add.
-- Use the Edit button on a card to change duration/mood/notes/link.
-- Print from the header (🖨️) or Export Poster to PNG.
+## 🛠️ Tech Stack
+
+- **Frontend**: React + Vite
+- **Styling**: TailwindCSS with custom design tokens
+- **State Management**: React hooks (`useState`, `useEffect`, `useMemo`)
+- **Utilities**: React Window for optimized activity list rendering
+- **Deployment**: Vercel
+
+---
+
+## 📦 Installation & Setup
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/Amrit-2708/EndJoy.git
+cd endjoy
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Run Locally
+```bash
+npm run dev
+```
+
+---
+
+🧑‍💻 Author
+
+Made with ❤️ by Amrit Raj
+
