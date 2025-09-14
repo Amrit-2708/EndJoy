@@ -31,7 +31,6 @@ export default function ActivityCatalog({ onAdd }) {
               <div className="font-semibold truncate">{a.name}</div>
               <div className="text-sm text-muted-foreground flex gap-2 flex-wrap">
                 <span className="px-2 py-0.5 rounded-full bg-muted">{a.category}</span>
-                {/* <span className="px-2 py-0.5 rounded-full bg-muted">{a.defaultDuration}m</span> */}
               </div>
             </div>
             <span className="text-xs px-3 py-1 rounded-full bg-primary/10 border border-primary/20">Add</span>

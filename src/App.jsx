@@ -129,7 +129,7 @@ export default function App() {
     })
     const a = document.createElement('a')
     a.href = dataUrl
-    a.download = 'weekendly-plan.png'
+    a.download = 'weekend-plan.png'
     a.click()
   }
 
